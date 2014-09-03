@@ -61,13 +61,127 @@
 						<li>Hoarder of <a href="http://boardgamegeek.com/collection/user/brianarn?own=1&subtype=boardgame&ff=1">board games</a></li>
 					</ul>
 				</section>
-				<section>
+				<section data-state="outline">
 					<h2>Outline</h2>
 					<ul>
 						<li>What is a Proxy?</li>
 						<li>Why do I care?</li>
+						<li>What can I even do?</li>
+						<li class="fragment fade-out">How is babby formed?</li>
 					</ul>
 				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>What is a Proxy?</h2>
+				</section>
+				<section>
+					<p>Let's ask Wikipedia!
+					<blockquote cite="http://en.wikipedia.org/wiki/Proxy">
+						&ldquo;Proxy is an agent or substitute authorized to act for another person or a document which authorizes the agent so to act&rdquo;
+					</blockquote>
+					<p class="fragment">That's ... not quite what we mean</p>
+				</section>
+				<section>
+					<h3>Proxy Server</h3>
+					<blockquote>
+						A proxy server is a server (a computer system or an application) that acts as an intermediary for requests from clients seeking resources from other servers.
+					</blockquote>
+				</section>
+				<section>
+					<h3>Proxy Server, Illustrated</h3>
+					<p><a href="http://commons.wikimedia.org/wiki/File:Proxy_concept_en.svg#mediaviewer/File:Proxy_concept_en.svg"><img src="http://upload.wikimedia.org/wikipedia/commons/b/bb/Proxy_concept_en.svg" alt="Proxy concept en.svg" height="300" width="400"></a></p>
+					<p style="font-size: 0.5em">"<a href="http://commons.wikimedia.org/wiki/File:Proxy_concept_en.svg#mediaviewer/File:Proxy_concept_en.svg">Proxy concept en</a>" by <a href="//commons.wikimedia.org/wiki/User:H2g2bob" title="User:H2g2bob">H2g2bob</a> - <span class="int-own-work">Own work</span>. Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" title="Creative Commons Zero, Public Domain Dedication">CC0</a> via <a href="//commons.wikimedia.org/wiki/">Wikimedia Commons</a>.</p>
+				</section>
+				<section>
+					<h3>Charles Proxy</h3>
+					<div class="twocol">
+						<a href="http://www.charlesproxy.com" target="_blank">
+							<img src="images/charles-proxy-homepage-corner.png" alt="Charles Proxy">
+						</a>
+					</div>
+					<div class="twocol">
+						<p>Charles Proxy is a software HTTP proxy / monitor that is built to assist with debugging web requests</p>
+					</div>
+					<div class="fragment">
+						<p>Another common proxy is <a href="http://www.telerik.com/fiddler" target="_blank">Fiddler</a>, which was Windows-only until recently</p>
+						<p>There are many others, these are just the most common</p>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Why do I care?</h2>
+				</section>
+				<section>
+					<h3>Knowledge is Power</h3>
+					<ul>
+						<li>Proxy servers can provide great insight into <em>exactly</em> what is happening with every network request, even before the remote server has started sending the response</li>
+						<li>Charles allows for altering requests and responses</li>
+						<li>Be your own man-in-the-middle</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>What can I even do?</h2>
+				</section>
+				<section>
+					<h3>Useful Basics</h3>
+					<ul>
+						<li>Network Omniscience (Recording)</li>
+						<li>Disable Caching Everywhere</li>
+						<li>Block Cookies</li>
+						<li>DNS Spoofing</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Mapping</h3>
+					<ul>
+						<li>Map Local</li>
+						<li>Map Remote</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Bad Conditions</h3>
+					<ul>
+						<li>Blacklisting</li>
+						<li>Throttling</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Gettin' Crazy</h3>
+					<ul>
+						<li>Rewrite</li>
+						<li>Breakpoints</li>
+						<li>Publishing Gists</li>
+						<li>Other Devices</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Even More</h3>
+					<ul>
+						<li>Port Forwarding</li>
+						<li>Reverse Proxying</li>
+						<li>SSL Proxying</li>
+						<li>Mirroring</li>
+						<li>Auto-saving recording sessions at set intervals</li>
+						<li>Automated W3C Validation checks</li>
+					</ul>
+				</section>
+			</section>
+
+			<section data-state="babby-pees">
+				<h3>Other advice</h3>
+				<blockquote class="twitter-tweet" lang="en"><p>babby pees be ready at all times</p>&mdash; Babby Tips (@BabbyTips) <a href="https://twitter.com/BabbyTips/status/484096463681490945">July 1, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+
+			<section>
+				<h3>Thank you!</h3>
 			</section>
 
 			</div> <!--/.slides-->
@@ -78,11 +192,12 @@
 
 		</div> <!--/.reveal-->
 
+		<!-- Baseline Reveal requirements -->
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
 
+		<!-- Reveal configuration -->
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -105,8 +220,10 @@
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
-
 		</script>
+
+		<!-- Moar -->
+		<script src="custom/events.js"></script>
 
 	</body>
 </html>

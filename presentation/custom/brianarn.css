@@ -3,10 +3,10 @@
 	max-height: 4%;
 }
 .reveal {
-	tab-size: 4;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	-webkit-tab-size: 4;
+	tab-size: 2;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	-webkit-tab-size: 2;
 }
 .reveal footer {
 	position: fixed;
@@ -32,4 +32,23 @@
 .reveal footer p {
 	line-height: 0.3em;
 	font-size: 25%;
+}
+.reveal blockquote {
+	background: white;
+	border: 1px solid black;
+}
+
+.reveal .twocol {
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+.reveal .twocol p {
+	padding-left: 1em;
+}
+
+/* I know this is evil, it's okay I swear, be cool */
+#twitter-widget-0 {
+	margin: 10px auto !important;
 }
